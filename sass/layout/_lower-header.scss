@@ -1,19 +1,14 @@
-nav {
-  .social-icon {
-    border-color: rgba(224, 224, 224, 1);
-    border-width: 1px;
-    border-style: solid;
-    border-radius: 50%;
-    padding: 20px;
-    width: 50px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
+nav.nav-main {
+  li.nav-item {
+    a.nav-link {
+      color: rgba(56, 56, 56, 1);
+      text-decoration: none;
+      transition: all 0.3s ease-in-out;
 
-    i {
-      color: #686868;
+      &:hover {
+        color: #128393;
+        font-weight: 900;
+      }
     }
   }
 }

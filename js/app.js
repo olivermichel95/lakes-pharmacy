@@ -13,4 +13,15 @@ $(document).ready(function () {
     slidesPerView: 5,
     spaceBetween: 20,
   });
+
+  $("#mobile_menu_btn").on("click", function () {
+    console.log("Mobile menu button clicked");
+    $("#mobile_menu").toggleClass("open");
+  });
+
+  $(document).on("click", function (e) {
+    if (!$(e.target).closest("#mobile_menu, #mobile_menu_btn").length) {
+      $("#mobile_menu").removeClass("open");
+    }
+  });
 });

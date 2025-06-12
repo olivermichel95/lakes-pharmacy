@@ -17,126 +17,156 @@
     />
     <!-- STYLESHEETS END -->
   </head>
+
   <body>
     <header>
       <div class="nav-banner">
-        <div class="banner-info">
-          <div class="d-flex align-items-center gap-1">
-            <i class="fa-solid fa-phone"></i>
-            <span class="text-white">Tel: 813-776-1277</span>
-          </div>
-          <div class="d-flex align-items-center gap-1">
-            <i class="fa-solid fa-location-dot"></i>
-            <span class="text-white"
-              >Address: 103 Flagship Dr, Lutz , fl 33549</span
-            >
-          </div>
-
-          <div class="d-flex align-items-center gap-1">
-            <i class="fa-solid fa-clock" style="color: #ffffff"></i>
-            <div class="d-flex flex-column">
-              <span class="text-white">Monday-Friday 9-5</span>
-              <span class="text-white">Saturday/Sunday off</span>
+        <div class="container">
+          <div class="d-flex align-items-center justify-content-between">
+            <div class="d-flex align-items-center gap-5">
+              <div class="d-flex align-items-center gap-2">
+                <i class="info-icon fa-solid fa-phone"></i>
+                <span class="info-text">Tel: 813-776-1277</span>
+              </div>
+              <div class="d-none d-md-flex align-items-center gap-2">
+                <i class="info-icon fa-solid fa-location-dot"></i>
+                <span class="info-text"
+                  >Address: 103 Flagship Dr, Lutz , fl 33549</span
+                >
+              </div>
+              <div class="d-none d-md-flex align-items-center gap-2">
+                <i class="info-icon fa-solid fa-clock"></i>
+                <div class="d-flex gap-1 location-text">
+                  <span class="info-text">Monday-Friday 9-5</span>
+                  <span class="info-text">/ Saturday/Sunday off</span>
+                </div>
+              </div>
             </div>
-          </div>
-          <div>
-            <div class="banner-btn">Transfer RX</div>
+
+            <div class="d-flex align-items-center gap-5">
+              <div
+                class="d-none d-md-flex align-items-center gap-3 social-icons-container"
+              >
+                <a href="#" class="social-icon">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="#" class="social-icon">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="#" class="social-icon">
+                  <i class="fa-brands fa-youtube"></i>
+                </a>
+              </div>
+
+              <a href="#" class="header-link" target="_blank">Transfer RX</a>
+            </div>
           </div>
         </div>
       </div>
-      <nav class="nav-main bg-white">
+
+      <nav class="nav-main bg-white d-none d-md-block">
         <div
           class="container d-flex justify-content-between align-items-center py-3"
         >
           <ul class="nav gap-4">
             <li class="nav-item">
-              <!-- to be added to css file  -->
-              <a
-                class="nav-link font-weight-normal"
-                style="color: rgba(56, 56, 56, 1)"
-                href="#"
-                >Home</a
-              >
+              <a class="nav-link font-weight-normal" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a
-                class="nav-link font-weight-normal"
-                style="color: rgba(56, 56, 56, 1)"
-                href="#"
-                >About</a
-              >
+              <a class="nav-link font-weight-normal" href="#">About</a>
             </li>
             <li class="nav-item">
-              <a
-                class="nav-link font-weight-normal"
-                style="color: rgba(56, 56, 56, 1)"
-                href="#"
-                >Services</a
-              >
+              <a class="nav-link font-weight-normal" href="#">Services</a>
             </li>
             <li class="nav-item">
-              <a
-                class="nav-link font-weight-normal"
-                style="color: rgba(56, 56, 56, 1)"
-                href="#"
-                >Contact</a
-              >
+              <a class="nav-link font-weight-normal" href="#">Contact</a>
             </li>
           </ul>
-
-          <div class="d-flex align-items-center gap-4">
-            <a href="#" class="social-icon">
-              <i class="fa-brands fa-facebook-f"></i>
-            </a>
-            <a href="#" class="social-icon">
-              <i class="fa-brands fa-instagram"></i>
-            </a>
-            <a href="#" class="social-icon">
-              <i class="fa-brands fa-youtube"></i>
-            </a>
-          </div>
         </div>
       </nav>
     </header>
-    <div class="main-content">
-      <div class="hero-section">
-        <div class="main-image-wrapper">
-          <img
-            src="assets/new Upscaled_Family_Lakes_Image 1 (1).png"
-            alt=""
-            class="main-image"
-          />
-          <div class="gradient-overlay"></div>
-          <img
-            src="assets/01_logo transparency-01 2.png"
-            alt="The Lakes Pharmacy"
-            class="logo-overlay"
-          />
-        </div>
 
-        <div class="hero-card">
-          <div class="card-content d-flex flex-column justify-content-center">
-            <h2>We Make Healthcare Accessible and Affordable</h2>
-            <p>
-              At The Lakes Pharmacy, we believe that every patient deserves to
-              be treated like family — because to us, you are. As a proud
-              family-owned pharmacy, our mission is to care for our community
-              with the same heart, attention, and compassion we would give our
-              own loved ones. more
-            </p>
-            <div class="video-icon">
-              <a href="#">
-                <i
-                  class="fa-solid fa-circle-play fa-4x play-icon"
-                  style="color: #1283ae"
-                ></i
-              ></a>
-              <span class="p-3"> Watch Our Video </span>
-            </div>
+    <div id="mobile_menu">
+      <div class="d-flex flex-column gap-4 contact-info">
+        <div class="d-flex align-items-center gap-2">
+          <i class="info-icon fa-solid fa-phone"></i>
+          <span class="info-text">Tel: 813-776-1277</span>
+        </div>
+        <div class="d-flex align-items-center gap-2">
+          <i class="info-icon fa-solid fa-location-dot"></i>
+          <span class="info-text"
+            >Address: 103 Flagship Dr, Lutz , fl 33549</span
+          >
+        </div>
+        <div class="d-flex align-items-center gap-2">
+          <i class="info-icon fa-solid fa-clock"></i>
+          <div class="location-text">
+            <span class="info-text"
+              >Monday-Friday 9-5
+              <span class="info-text-light">/ Saturday/Sunday off</span></span
+            >
           </div>
         </div>
       </div>
+
+      <div class="menu">
+        <h6 class="menu-title">Menu</h6>
+        <ul class="p-0 m-0 menu-container">
+          <li class="menu-item">
+            <a href="#" class="menu-link">Home</a>
+          </li>
+          <li class="menu-item">
+            <a href="#" class="menu-link">Refil RX</a>
+          </li>
+          <li class="menu-item">
+            <a href="#" class="menu-link">About</a>
+          </li>
+          <li class="menu-item">
+            <a href="#" class="menu-link">Contact</a>
+          </li>
+        </ul>
+      </div>
     </div>
+
+    <!-- HERO SECTION -->
+    <div class="hero-section">
+      <div class="main-image-wrapper">
+        <img
+          src="assets/new Upscaled_Family_Lakes_Image 1 (1).png"
+          alt=""
+          class="main-image"
+        />
+        <img
+          src="assets/01_logo transparency-01 2.png"
+          alt="The Lakes Pharmacy"
+          class="logo-overlay"
+        />
+      </div>
+
+      <div class="hero-card">
+        <div class="card-content d-flex flex-column justify-content-center">
+          <h2 class="card-title">
+            We Make Healthcare Accessible and Affordable
+          </h2>
+          <p class="card-description">
+            At The Lakes Pharmacy, we believe that every patient deserves to be
+            treated like family — because to us, you are. As a proud
+            family-owned pharmacy, our mission is to care for our community with
+            the same heart, attention, and compassion we would give our own
+            loved ones. more
+          </p>
+          <a href="#" class="video-icon" target="_blank">
+            <i class="fa-solid fa-circle-play play-icon"></i>
+            <span class="p-3"> Watch Our Video </span>
+          </a>
+        </div>
+      </div>
+
+      <button id="mobile_menu_btn">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+    <!-- HERO SECTION END -->
 
     <!-- SERVICES SECTION -->
     <section class="services-section">

@@ -1,33 +1,50 @@
 .nav-banner {
-  background-color: rgba(13, 122, 141, 1);
+  background-color: #ffffff;
   width: 100%;
-  height: 122px;
-  padding-top: 40px;
+  height: 65px;
+  border-bottom: 1px solid #e0e0e0;
+  display: flex;
+  align-items: center;
 
-  .banner-info {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+  i.info-icon {
+    color: #128393;
+    font-size: 18px;
+  }
 
-    i {
-      color: #ffffff;
-      width: 40px;
-      height: 40px;
-      font-size: 20px;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
+  span.info-text {
+    font-size: 14px;
+    font-weight: 400;
+    color: #686868;
+  }
+
+  div.location-text {
+    span.info-text {
+      color: #128393;
+
+      &:nth-child(1) {
+        font-weight: 800;
+      }
+      &:nth-child(2) {
+        font-weight: 400;
+      }
     }
+  }
 
-    .banner-btn {
-      color: rgba(18, 131, 147, 1);
-      background-color: #ffffff;
-      width: 204px;
-      height: 56px;
-      border-radius: 28px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+  .social-icons-container {
+    .social-icon {
+      text-decoration: none;
+
+      i {
+        color: #686868;
+        font-size: 18px;
+      }
     }
+  }
+
+  .header-link {
+    color: #128393;
+    text-decoration: underline;
+    font-size: 20px;
+    font-weight: 700;
   }
 }
