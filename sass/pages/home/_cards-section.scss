@@ -1,0 +1,30 @@
+.cards-section {
+  background-image: url("../assets/Rectangle\ 2467.png");
+  background-size: cover;
+  color: white;
+  padding: 3rem;
+
+  .cards-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+
+    .card {
+      background-color: white;
+      color: black;
+      padding: 1.5rem;
+      border-radius: 25px;
+      width: 100%;
+      max-width: 400px;
+    }
+  }
+}
+
+@include media-breakpoint-md {
+  .cards-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    flex-direction: column;
+  }
+}

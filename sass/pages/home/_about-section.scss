@@ -1,0 +1,37 @@
+.text-primary {
+  color: rgba(18, 131, 147, 1);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 800;
+  font-size: 16px;
+}
+
+.text-primary,
+.text-secondary {
+  width: 70%;
+}
+
+@include media-breakpoint-md {
+  .text-primary {
+    color: rgba(18, 131, 147, 1);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    font-size: 16px;
+  }
+  .text-primary,
+  .text-secondary {
+    width: 70%;
+  }
+
+  section {
+    .container {
+      width: 100%;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+
+      .aboutus-img {
+        width: 100% !important;
+      }
+    }
+  }
+}
