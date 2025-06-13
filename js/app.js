@@ -5,9 +5,19 @@ $(document).ready(function () {
     // centeredSlides: true,
     slidesPerView: 3,
     spaceBetween: 30,
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 2,
+      },
+      1024: {
+        slidesPerView: 3,
+      },
+    },
   });
 
-  // services slider
   const partnersSwiper = new Swiper(".partners-section .swiper", {
     loop: true,
     slidesPerView: 5,

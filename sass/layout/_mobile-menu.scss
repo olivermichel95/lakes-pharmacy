@@ -9,6 +9,9 @@ div#mobile_menu {
   padding: 40px;
   transition: all 0.3s ease-in-out;
 
+  display: flex;
+  flex-direction: column;
+
   &.open {
     left: 0;
   }
@@ -40,13 +43,40 @@ div#mobile_menu {
 
   div.menu {
     h6.menu-title {
+      font-weight: 800;
+      font-size: 18px;
+      color: #000000;
     }
 
     ul.menu-container {
+      list-style: none;
       li.menu-item {
         a.menu-link {
+          text-decoration: none;
+          font-weight: 400;
+          font-size: 16px;
+          letter-spacing: 5%;
+          color: #383838;
+
+          &:hover {
+            font-weight: 900;
+            font-size: 18px;
+            color: #128393;
+          }
         }
       }
+    }
+  }
+
+  .social-icons-container {
+    margin-top: auto;
+    // display: flex;
+    // gap: 16px;
+
+    a.social-icon {
+      color: #686868;
+      font-size: 18px;
+      text-decoration: none;
     }
   }
 }

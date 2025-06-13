@@ -64,6 +64,8 @@ div#mobile_menu {
   z-index: 999999;
   padding: 40px;
   transition: all 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
 }
 div#mobile_menu.open {
   left: 0;
@@ -87,6 +89,35 @@ div#mobile_menu .contact-info div.location-text span.info-text {
 div#mobile_menu .contact-info div.location-text span.info-text .info-text-light {
   font-weight: 400;
 }
+div#mobile_menu div.menu h6.menu-title {
+  font-weight: 800;
+  font-size: 18px;
+  color: #000000;
+}
+div#mobile_menu div.menu ul.menu-container {
+  list-style: none;
+}
+div#mobile_menu div.menu ul.menu-container li.menu-item a.menu-link {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 5%;
+  color: #383838;
+}
+div#mobile_menu div.menu ul.menu-container li.menu-item a.menu-link:hover {
+  font-weight: 900;
+  font-size: 18px;
+  color: #128393;
+}
+div#mobile_menu .social-icons-container {
+  margin-top: auto;
+}
+div#mobile_menu .social-icons-container a.social-icon {
+  color: #686868;
+  font-size: 18px;
+  text-decoration: none;
+}
+
 footer.footer-container {
   position: relative;
   color: white;
@@ -258,7 +289,7 @@ footer .footer-icons {
 @media (max-width: 991.98px) {
   .hero-section {
     height: 485px;
-    margin-bottom: 240px;
+    margin-bottom: 290px;
   }
   .hero-section .main-image-wrapper {
     width: 100%;
@@ -337,6 +368,14 @@ section.services-section .slider-container .swiper-wrapper .swiper-slide img {
 .text-primary,
 .text-secondary {
   width: 70%;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.aboutus-title {
+  font-weight: 700;
+  font-size: 36px;
+  color: #000000;
 }
 
 @media (max-width: 991.98px) {

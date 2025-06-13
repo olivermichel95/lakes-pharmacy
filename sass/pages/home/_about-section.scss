@@ -8,6 +8,13 @@
 .text-primary,
 .text-secondary {
   width: 70%;
+  font-weight: 400;
+  font-size: 20px;
+}
+.aboutus-title {
+  font-weight: 700;
+  font-size: 36px;
+  color: #000000;
 }
 
 @include media-breakpoint-md {
