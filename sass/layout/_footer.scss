@@ -21,6 +21,7 @@ footer {
       height: 100%;
       width: 100%;
       position: relative;
+      filter: blur(8px);
     }
   }
 
@@ -32,8 +33,24 @@ footer {
     width: 75%;
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: baseline;
     z-index: 1;
+  }
+  .footer-links {
+    line-height: 3;
+  }
+  .footer-section {
+    line-height: 2;
+    h4 {
+      margin-bottom: 15px;
+    }
+    p {
+      display: flex;
+      gap: 15px;
+    }
+    i {
+      font-size: 30px;
+    }
   }
 
   .social-icon {
@@ -54,6 +71,7 @@ footer {
   .footer-links {
     ul {
       list-style: none;
+      padding: 0rem !important;
     }
 
     li {
@@ -76,7 +94,7 @@ footer {
 @include media-breakpoint-md {
   footer {
     .footer-icons {
-      bottom: 470px;
+      bottom: 100px;
       z-index: 2;
       justify-content: flex-end;
       align-items: center;
@@ -92,14 +110,15 @@ footer {
 
     .footer-content {
       position: absolute;
-      top: 26%;
+      top: 35%;
       transform: translate(-50%, -50%);
-      left: 42%;
+      left: 45%;
       width: 75%;
       display: flex;
       justify-content: space-between;
       align-items: flex-start;
       z-index: 1;
+      gap: 20px;
       flex-direction: column;
     }
   }

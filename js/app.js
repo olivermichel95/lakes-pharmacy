@@ -7,13 +7,16 @@ $(document).ready(function () {
     spaceBetween: 30,
     breakpoints: {
       0: {
-        slidesPerView: 1,
+        slidesPerView: 1.5,
+        centeredSlides: true,
       },
       768: {
-        slidesPerView: 2,
+        slidesPerView: 1.5,
+        centeredSlides: true,
       },
       1024: {
-        slidesPerView: 3,
+        slidesPerView: 1.5,
+        centeredSlides: true,
       },
     },
   });
