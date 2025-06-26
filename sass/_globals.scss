@@ -3,3 +3,9 @@ body {
   margin: 0;
   padding: 0;
 }
+
+@include media-breakpoint-md {
+  .desktop-only {
+    display: none !important;
+  }
+}
